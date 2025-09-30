@@ -4,7 +4,7 @@ A classic Tetris implementation built with Python and Pygame.
 
 ## Features
 
-- **Complete Tetris gameplay** with all 7 standard tetromino pieces (I, O, T, S, Z, J, L)
+- **Complete Tetris gameplay** with all 7 standard block drop pieces (I, O, T, S, Z, J, L)
 - **Smooth piece movement** with gravity, rotation, and wall kicks
 - **Line clearing** with proper scoring system
 - **Level progression** with increasing speed
@@ -51,7 +51,7 @@ block_drop/
 └── src/
     ├── __init__.py     # Package marker
     ├── constants.py    # Game constants and configuration
-    ├── tetromino.py    # Tetris piece classes and logic
+    ├── block_drop.py   # Tetris piece classes and logic
     ├── board.py        # Game board and collision detection
     ├── game.py         # Main game engine and logic
     └── renderer.py     # Pygame-based graphics rendering
@@ -85,9 +85,9 @@ The game is built with a clean, modular architecture:
 
 - `TetrisGame`: Main game loop and state management
 - `Board`: Game board logic, collision detection, line clearing
-- `Tetromino`: Piece shapes, rotation, and movement
+- `BlockDrop`: Piece shapes, rotation, and movement
 - `GameRenderer`: All graphics and UI rendering
-- `TetrominoGenerator`: Random piece generation using bag system
+- `BlockDropGenerator`: Random piece generation using bag system
 
 ## License
 
